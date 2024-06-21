@@ -1,0 +1,19 @@
+.educational-activities {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .educational-activities button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 1em;
+  }
+  
+  .educational-activities h1 {
+    font-size: 2em;
+  }
+  
+  .educational-activities p {
+    font-size: 1.2em;
+  }
+  

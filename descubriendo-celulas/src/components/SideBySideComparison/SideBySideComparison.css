@@ -1,0 +1,29 @@
+.side-by-side-comparison {
+  text-align: center;
+  margin: 20px;
+}
+
+.side-by-side-comparison button {
+  margin: 10px;
+  padding: 10px;
+  font-size: 1em;
+}
+
+.comparison-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cell {
+  text-align: center;
+}
+
+.cell h2 {
+  font-size: 1.5em;
+}
+
+.cell img {
+  max-width: 100%;
+  height: auto;
+}

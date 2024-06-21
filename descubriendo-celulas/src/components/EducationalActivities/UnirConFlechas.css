@@ -1,0 +1,52 @@
+.unir-con-flechas {
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #e6e6fa;
+  position: relative;
+  min-height: 100vh;
+}
+
+.columns {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.column {
+  margin: 0 20px;
+  padding: 20px;
+  border: 2px solid #6a0dad;
+  border-radius: 10px;
+  background-color: #dda0dd;
+  width: 300px;
+}
+
+.characteristic {
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #ba55d3;
+  border-radius: 5px;
+  border: 2px solid #8a2be2;
+  color: white;
+  user-select: none;
+}
+
+.select-cell {
+  margin-left: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #8a2be2;
+}
+
+.congratulations {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #d4edda;
+  border: 2px solid #c3e6cb;
+  border-radius: 5px;
+  color: #155724;
+  font-weight: bold;
+}
+
+

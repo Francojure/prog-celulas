@@ -1,0 +1,98 @@
+.cell-explorer {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(to bottom right, #f0f8ff, #e6e6fa);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cell-explorer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle at 10% 10%, rgba(255,0,0,0.5) 1px, transparent 1px),
+                    radial-gradient(circle at 20% 20%, rgba(255,127,0,0.5) 1px, transparent 1px),
+                    radial-gradient(circle at 30% 30%, rgba(255,255,0,0.5) 1px, transparent 1px),
+                    radial-gradient(circle at 40% 40%, rgba(0,255,0,0.5) 1px, transparent 1px),
+                    radial-gradient(circle at 50% 50%, rgba(0,0,255,0.5) 1px, transparent 1px),
+                    radial-gradient(circle at 60% 60%, rgba(75,0,130,0.5) 1px, transparent 1px),
+                    radial-gradient(circle at 70% 70%, rgba(148,0,211,0.5) 1px, transparent 1px);
+  background-size: 50px 50px;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+.cell-explorer h1 {
+  margin-bottom: 20px;
+  color: #4a90e2;
+  font-size: 2.5em;
+}
+
+.cell-explorer .carousel-container {
+  width: 80%; /* Ajusta el ancho según sea necesario */
+  margin-bottom: 30px;
+}
+
+.cell-container-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.cell-container {
+  display: inline-block;
+  width: 28%;
+  margin: 1%;
+  padding: 20px;
+  background-color: #ffffffcc;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.3s;
+}
+
+.cell-container:hover {
+  transform: scale(1.05);
+}
+
+.cell-container h2 {
+  margin-top: 0;
+  color: #3e3e3e;
+}
+
+.cell-container p {
+  margin: 10px 0;
+  color: #555555;
+}
+
+.cell-container button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #ff7f50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cell-container button:hover {
+  background-color: #ff4500;
+}
+
+.cell-explorer .carousel-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}

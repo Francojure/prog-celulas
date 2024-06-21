@@ -1,0 +1,10 @@
+.organelle-list {
+  text-align: center;
+  margin: 20px;
+}
+
+.organelle-list button {
+  margin: 10px;
+  padding: 10px;
+  font-size: 1em;
+}

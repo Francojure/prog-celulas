@@ -1,0 +1,12 @@
+.organelle-detail {
+  text-align: center;
+  margin: 20px;
+}
+
+.organelle-detail h2 {
+  font-size: 1.5em;
+}
+
+.organelle-detail p {
+  font-size: 1.2em;
+}

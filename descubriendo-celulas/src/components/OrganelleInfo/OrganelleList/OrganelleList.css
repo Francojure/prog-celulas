@@ -1,0 +1,15 @@
+.organelle-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .organelle-list li {
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .organelle-list li:hover {
+    background-color: #eef;
+  }
+  

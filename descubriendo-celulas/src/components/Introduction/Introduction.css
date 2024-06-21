@@ -1,0 +1,128 @@
+.introduction {
+  text-align: center;
+  margin: 20px;
+  background-color: #f0f8ff; /* Fondo claro */
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Pintitas de colores alrededor del título */
+.introduction::before,
+.introduction::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #ff6f61;
+  border-radius: 50%;
+  top: 10%;
+  left: 10%;
+  z-index: 0;
+  opacity: 0.6;
+  animation: float 10s infinite alternate;
+  box-shadow: 
+    20px 30px #ff6f61,
+    40px 50px #2e8b57,
+    60px 20px #ffd700,
+    80px 60px #ffa500,
+    100px 40px #2e8b57,
+    120px 10px #ff6f61,
+    140px 80px #ffd700,
+    160px 30px #ffa500,
+    180px 70px #2e8b57;
+}
+
+.introduction::after {
+  background-color: #2e8b57;
+  top: 15%;
+  left: 15%;
+  opacity: 0.6;
+  animation: float 10s infinite alternate-reverse;
+  box-shadow: 
+    -20px -30px #ffa500,
+    -40px -50px #ffd700,
+    -60px -20px #2e8b57,
+    -80px -60px #ff6f61,
+    -100px -40px #2e8b57,
+    -120px -10px #ffa500,
+    -140px -80px #ffd700,
+    -160px -30px #2e8b57,
+    -180px -70px #ff6f61;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+.introduction h1 {
+  font-size: 2.5em;
+  color: #FF6F61; /* Color rojo brillante */
+  font-family: 'Comic Sans MS', cursive; /* Fuente divertida */
+  position: relative;
+  z-index: 1;
+  text-shadow: 2px 2px #ffafaf;
+}
+
+.introduction p {
+  font-size: 1.4em;
+  color: #2E8B57; /* Color verde bosque */
+  position: relative;
+  z-index: 1;
+}
+
+/* Encapsulando ThreeScene */
+.three-scene-container {
+  border: 1px solid #ccc; /* Agrega un borde al contenedor */
+  padding: 20px;
+  margin-top: 20px; /* Ajusta el margen superior para separar la escena del resto del contenido */
+  border-radius: 10px;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+
+.three-scene {
+  width: 100%; /* Ajusta el ancho del contenedor al 100% */
+  height: 400px; /* Define una altura para el contenedor */
+}
+
+/* Encapsulando los botones */
+.buttons-container {
+  border: 1px solid #ccc; /* Agrega un borde al contenedor */
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.buttons button {
+  padding: 15px 20px;
+  font-size: 1.2em;
+  background-color: #FFD700; /* Color amarillo brillante */
+  color: #333; /* Color de texto oscuro */
+  border: 2px solid #FFD700; /* Borde amarillo */
+  border-radius: 8px; /* Bordes redondeados */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.buttons button:hover {
+  background-color: #FFA500; /* Cambio de color al pasar el mouse */
+  border-color: #FFA500;
+  color: #fff; /* Cambio de color de texto al pasar el mouse */
+}
